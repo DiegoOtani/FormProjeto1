@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styleform.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="figs/ods_geral.png" alt="Icone ODS">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="https://www.un.org/en/about-us" title="Site Oficial da Onu" target="_blank">Site da ONU</a>
+            <a class="cabecalho-menu-item" href="https://brasil.un.org/pt-br/sdgs" title="Sobre os ODS" target="_blank">Sobre</a>
+            <a class="cabecalho-menu-item" href="https://brasil.un.org/pt-br/sdgs/9" title="Sobre a ODS 9" target="_blank">ODS 9</a>
+            <a class="cabecalho-menu-item" href="https://brasil.un.org/pt-br/take-action" title="Faça a sua parte" target="_blank">Faça a sua parte</a>
+        </nav>        
+    </header>
+    <main class="conteudo">
+        <form class="formulario">
+            <label class="label-username label" for="username"> Nome completo: </label><br>
+            <input class="input-username input" type="text" id="username" name="username" required><br> 
+            <br><label class="label-idade label" for="idade">Idade: </label><br>
+            <input class="input-idade input" type="number" id="idade" name="idade" min="18" placeholder="Mínimo 18 anos" required><br>
+            <br><label class="label-telefone label" for="telefone">Telefone: </label><br>
+            <input class="input-telefone input" type="tel" id="telefone" name="telefone" placeholder="ex:(15)94002-8922" required>
+            <br><label class="label-email label" for="e-mail">E-mail: </label><br>
+            <input class="input-email input" type="email" id="e-mail" name="e-mail" placeholder="ex:exemplo@gmail.com" required><br>
+            <br><label class="label-interesse label" for="interesse">Interesse em participar: </label><br>
+            <select class="select-interesse" name="interesse" id="interesse">
+                <option class="option" value="Presencial">Presencialmente</option>
+                <option class="option" value="Remoto">Remotamente</option>
+                <option class="option" value="Não">Não tenho disponibilidade</option>
+            </select><br>
+            <br><label class="label-opiniao label" for="opinião">Compartilhe sua ideia:</label><br>
+            <textarea class="textarea-opiniao" name="opinião" id="opinião" cols="30" rows="5"></textarea>
+            <br><input class="submit" type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer class="rodape">
+        <img class="rodape-imagem" src="figs/ods-footer.png" alt="logo-ODS">
+    </footer>
+</body>
+</html>
